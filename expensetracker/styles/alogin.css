@@ -1,0 +1,292 @@
+/* import external styling files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine');
+@import url('https://fonts.googleapis.com/css2?family=Rancho');
+
+/*
+ ====THIS STYLE WAS DEVELOPED BY:
+*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ROOT STYLES*/
+:root
+{
+    --mainColor: #2ba9ff;
+    --whiteColor: white;
+    --blackColor: black;
+    --textFont: 'Roboto', 'Roboto Condensed', sans-serif;
+    --titleFont: 'Rancho', 'Roboto Condensed', sans-serif;
+}
+ 
+/*===BODY STYLES===*/
+body
+{
+    font-family: var(--textFont);
+    background-color: #2ba9ff;
+    background-color: white;
+    background: url('../pictures/adminbg.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+/* shortcodes */
+.pd-25{padding: 25px;}
+.dFlex{display: flex;}
+.clRed{color:#ff0000;}
+.clWhite{color:#fff;}
+.bgGreen{background-image: linear-gradient(-45deg,  #2eff39 0%, #00ffaa 100%);}
+.bgProcess{background-image: linear-gradient(-45deg,  #d3fdd5 0%, #ffd000 100%);}
+.bgRed{background-color: red;}
+ 
+/**============== SCROLL =============**/
+body::-webkit-scrollbar-track, .navbar-collapse::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.9);-moz-box-shadow:inset 0 0 6px rgba(0,0,0,0.9);-o-box-shadow:inset 0 0 6px rgba(0,0,0,0.9);box-shadow:inset 0 0 6px rgba(0,0,0,0.9);-webkit-border-radius:2px;-o-border-radius:2px; border-radius:2px; background-color:transparent;}
+body::-webkit-scrollbar, .navbar-collapse::-webkit-scrollbar{width:12px; background-color:#F5F5F5;}
+body::-webkit-scrollbar-thumb, .navbar-collapse::-webkit-scrollbar-thumb {-webkit-border-radius:2px;-o-border-radius:2px;border-radius:2px; background-color:#2ba9ff; background-image:-webkit-linear-gradient(90deg, transparent, rgba(165, 156, 156, 0.4) 50%, transparent, transparent);}
+
+
+/* company name */
+#companyName
+{
+    text-transform: uppercase;
+    color: var(--mainColor);
+    font-size: 1.4em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.671);
+    font-family: var(--textFont);
+    font-size: 1.9em;
+    font-weight: 600;
+    /* margin-left: 50px; */
+}
+
+#companyName:hover
+{
+    text-decoration: none;
+}
+
+#body
+{
+    position: relative;
+    top: 4em;
+}
+
+#formContent
+{
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.411);
+    border-radius: 25px;
+    height: 420px;
+    margin-bottom: 25px;
+}
+
+#formContent .title
+{
+    text-align: center;
+    background-image: linear-gradient(-45deg,  #ffffff 0%, #ffffff 100%);
+    padding: 50px 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin: -25px -25px 0px;
+    color: var(--mainColor);
+    text-shadow: 1px 1px 1px #333;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 25px;
+    box-shadow: 2px 5px 5px -4px rgba(0, 0, 0, 0.589);
+}
+
+.input-field 
+{
+    max-width: 100%;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    /* height: 100%; */
+    border-radius: 15px;
+    padding: 0 0.4rem;
+    /* position: relative; */
+    z-index: 10;
+}
+
+.input-field i 
+{
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.input-field input 
+{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    z-index: 10;
+    width: 90%;
+}
+
+.input-field input::placeholder 
+{
+    color: #aaa;
+    font-weight: 500;
+}
+
+#formContent .decor
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#formContent button
+{
+    background-image: linear-gradient(-45deg,  #2ba9ff 0%, #ffffff 100%);
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: var(--mainColor);
+    color: black;
+    font-size: 1.3em;
+    /* text-shadow: 1px 1px 1px black; */
+    z-index: 10;
+}
+
+#formContent button:hover
+{
+    padding: 10px 40px;
+    box-shadow: 2px 4px 5px -5px black;
+    transition: all 0.4s ease-in-out;
+    z-index: 10;
+}
+
+/*
+image svg style
+*/
+#formContent .image 
+{
+    /* width: 750px; */
+    height: 200px;
+    transition: transform 1.1s ease-in-out;
+    transition-delay: 0.4s;
+    margin-top: -7.3em;
+    float: right;
+}
+
+#formContent #forgotPwd
+{
+    font-weight: 600;
+    z-index: 1000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center;
+    margin: auto;
+}
+
+#forgotPwd a
+{
+    text-align: center;
+    margin-left: 2em;    
+    font-size: 1.1em;
+    width: 100%;
+}
+
+#formContent #forgotPwd a:hover
+{
+    text-decoration: none;
+    /* font-size: 1.1em; */
+    transition: all 0.4s ease-in-out;
+    color: white;
+    box-shadow: 2px 4px 6px -4px #004;
+}
+
+#error
+{
+    border-radius: 15px;
+}
+
+#error p
+{
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 1px 1px 1px #333;
+}
+
+
+/* MOBILE SCREEN */
+@media screen and (max-width: 570px)
+{   
+    body
+    {
+        font-family: var(--textFont);
+        background-image: linear-gradient(-45deg,  #2ba9ff 0%,  #2ba9ff 100%);
+        background-color: #2ba9fe;
+    }
+
+    /* company name */
+    #companyName
+    {
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.4em;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.671);
+        font-family: var(--textFont);
+        font-size: 1.9em;
+        font-weight: 600;
+        /* margin-left: 8.5%; */
+    }
+
+    /*
+     *Image svg style
+    */
+    #formContent .image 
+    {
+        width: 300px;
+        height: 200px;
+        transition: transform 1.1s ease-in-out;
+        transition-delay: 0.4s;
+        margin-top: -4.3em;
+    }
+
+    .input-field i 
+    {
+        text-align: center;
+        line-height: 55px;
+        color: #acacac;
+        transition: 0.5s;
+        font-size: 1.1rem;
+        margin-right: 0px;
+    }
+
+    .input-field input 
+    {
+        background: none;
+        outline: none;
+        border: none;
+        line-height: 1;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #333;
+        z-index: 10;
+        width: 88%;
+    }
+}
+
+
